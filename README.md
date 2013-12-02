@@ -74,27 +74,28 @@ Here are some useful commands for this lab
     ```bash
     vim toEdit.txt
     ```
-![The file should look like so:](http://i.imgur.com/GC7qccO.png)
+    ![The file should look like so:](http://i.imgur.com/GC7qccO.png)
 
-As you can see there are multiple errors in this text file.
+    As you can see there are multiple errors in this text file.
 
 2. Navigate to the line 3.
-Here we see three lines of the same text,
-Delete two using one command in vim and 
-write it command down in a separate document.
-*Hint the command will begin with 2d*
+    Here we see three lines of the same text,
+    Delete two using one command in vim and 
+    write it command down in a separate document.
+    *Hint the command will begin with 2d*
 
-![The file should now look like:](http://i.imgur.com/jdzhq5s.png)
+    ![The file should now look like:](http://i.imgur.com/jdzhq5s.png)
 
 3. Now navigate to line 5. Here we see three of the same word.
-Delete two of them using one command and
-write it down the document with the other command.
-*Hint the command will begin with 2d*
+   Delete two of them using one command and
+   write it down the document with the other command.
+   *Hint the command will begin with 2d*
 
-![The file should now look like:](http://i.imgur.com/Jcoke7v.png)
+   ![The file should now look like:](http://i.imgur.com/Jcoke7v.png)
 
 4. Now navigate to line 6 and 7. Here we see a spelling mistakes on both line.
-Delete the extra I in II and delete the s in Its
-write the command in the document with the other commands.
-![The file should now look like:](http://i.imgur.com/Hhb4lw0.png)
+   Delete the extra I in II and delete the s in Its
+   write the command in the document with the other commands.
+   ![The file should now look like:](http://i.imgur.com/Hhb4lw0.png)
 
+## Part Two - Editing the .vimrc ##
