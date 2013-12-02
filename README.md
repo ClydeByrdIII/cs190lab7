@@ -29,7 +29,13 @@ Depending on your working environment, perform the appropriate action:
 ## Required Vim Setup ##
 
 1. You need to download a sample .vimrc to make using Vim a little easier.
-    bash
+
+```bash
+    # Don't do this if you already have a .vimrc customized to your liking
+    cd $HOME
+    wget https://raw.github.com/ClydeByrdIII/cs190lab7/master/.vimrc
+```
+
     
     
 
