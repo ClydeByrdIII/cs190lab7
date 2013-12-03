@@ -25,7 +25,7 @@ You need to download a sample .vimrc to make using Vim a little easier.
 ```bash
 # NOTE: Don't do this if you already have a .vimrc customized to your liking!!!
 
-wget https://raw.github.com/ClydeByrdIII/cs190lab7/master/vimrc -O ~/.vimrc
+wget -O ~/.vimrc https://raw.github.com/ClydeByrdIII/cs190lab7/master/vimrc
 ```
 
 ## Clone the CS190lab7 Repo ##
