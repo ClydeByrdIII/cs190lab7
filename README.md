@@ -30,11 +30,11 @@ Depending on your working environment, perform the appropriate action:
 
 You need to download a sample .vimrc to make using Vim a little easier.
 
-    ```bash
-    # Don't do this if you already have a .vimrc customized to your liking
-    cd $HOME
-    wget https://raw.github.com/ClydeByrdIII/cs190lab7/master/.vimrc
-    ```
+```bash
+# Don't do this if you already have a .vimrc customized to your liking
+cd $HOME
+wget https://raw.github.com/ClydeByrdIII/cs190lab7/master/.vimrc
+```
 
 ----
 
@@ -53,8 +53,8 @@ You need to download a sample .vimrc to make using Vim a little easier.
 ## Part 1 - Editing a file with vim ##
 
 ```bash
-   # cd into the lab repository
-   cd ~/cs190lab7
+# cd into the lab repository
+cd ~/cs190lab7
 ```
 
 Inside ~/cs190lab7 there should be three files a README.md, toEdit.txt, and a .vimrc.
