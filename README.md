@@ -5,14 +5,7 @@ The purpose of this lab is for you to learn how to use vim as a text editor and 
 
 Before starting the lab, please navigate to [the lecture material](https://docs.google.com/presentation/d/1mm5oDlTgyXVmkHaTHhWeHtDz9cT-MoGLzLolqzNGFEs/edit?usp=sharing) and make sure you have a basic understanding of Vim and regular expression. 
 
-You should also open up the [Vim Cheatsheet](asdf
-asdf
-asf
-asdf
-asdf
-asdf
-asdf
-) we created for quick reference.
+You should also open up the [Vim Cheatsheet](https://raw.github.com/ClydeByrdIII/cs190lab7/master/cheatsheet.md) we created for quick reference.
 
 ## Setup ##
 
@@ -21,18 +14,9 @@ Depending on your working environment, perform the appropriate action:
 | Environment   | Action        |
 | ------------- | ------------- |
 | Linux Lab Machine            | Open a terminal window        |
-| Windows or Personal Computer | SSH into `data.cs.purdue.edu`*  |
+| Windows or Personal Computer | SSH into `data.cs.purdue.edu`  (No X11 Forwarding)|
 
 ----
-
-\* You must have X11 forwarding enabled. If you are on the Windows Lab Computer, follow the instructions below:
-
-1. Search for 'Xming' in the start menu and run it.
-2. Open PuTTy
-3. Expand the 'SSH' tab from the 'Category' list
-4. Choose 'X11' from 'SSH' list
-5. Check 'Enable X11 Forwarding'
-6. Connect like normal to `data.cs.purdue.edu` within PuTTy.
 
 ## Required Vim Setup ##
 
@@ -58,39 +42,43 @@ wget https://raw.github.com/ClydeByrdIII/cs190lab7/master/vimrc ~/.vimrc
 3. A directory named `cs190lab7` appeared in your home directory.
     
 
-## Part 1 - Editing a file with vim ##
+## Part 1 - Editing example files with vim ##
 
-Inside ~/cs190lab7 there should be a file named 'errors.txt'. For part one, we will be to edit `errors.txt` with Vim.
+The first file we need to edit is `errors.txt`. It contains duplicate lines, mispellings, and other things that need to be fixed. 
 
-> This is the time you should probably open up the Vim Cheatsheet linked at the beginning of the lab.
+> This is the time you should probably open up the [Vim Cheatsheet](https://raw.github.com/ClydeByrdIII/cs190lab7/master/cheatsheet.md) mentioned in the beginning of the lab.
 
 1. Open errors.txt with Vim
     ```bash
     vim errors.txt
     ```
-    ![The file should look like so:](http://i.imgur.com/GC7qccO.png)
+    ![Original File](http://i.imgur.com/qQeNKfY.png)
 
-    As you can see there are multiple errors in this text file.
+    The file orignally looks like **Image 1**. As you can see there are multiple errors in this text file, such as lines 3-6 being duplicated and lines 8 having a mispelled 'I'.
 
-2. Navigate to the line 3.
-    Here we see three lines of the same text,
-    Delete two using one command in vim and 
-    write it command down in a separate document.
-    *Hint the command will begin with 2d*
+2.  **Remove duplicate lines**
+    ```
+    Goal:       Remove duplicated lines appearing on lines 4 and 5. 
+    Commands:   delete current line, delete n lines.
+    ```
 
-    ![The file should now look like:](http://i.imgur.com/jdzhq5s.png)
+    ![After removing duplicated lines](http://i.imgur.com/4B8EFn2.png)
 
-3. Now navigate to line 5. Here we see three of the same word.
-   Delete two of them using one command and
-   write it down the document with the other command.
-   *Hint the command will begin with 2d*
+3.  **Remove duplicate words**
+    ```
+    Goal:       Remove duplicated words appearing on line 5
+    Commands:   delete word, delete n words
+    ```
 
-   ![The file should now look like:](http://i.imgur.com/Jcoke7v.png)
+    ![After deleting duplicated words](http://i.imgur.com/lDA7Xpu.png)
 
-4. Now navigate to line 6 and 7. Here we see a spelling mistakes on both line.
-   Delete the extra I in II and delete the s in Its
-   write the command in the document with the other commands.
-   ![The file should now look like:](http://i.imgur.com/Hhb4lw0.png)
+4.  **Fix mispellings**
+    ```
+    Goal:       Remove characters causing mispellings on lines 6 and 7.
+    Commands:   Remove character
+    ```
+    
+    ![After fixing simple mispellings](http://i.imgur.com/gXR1KCt.png)
 
 ## Part Two - Editing the .vimrc ##
 
