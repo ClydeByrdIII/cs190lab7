@@ -42,8 +42,8 @@ To save and exit files, you must be in command mode (click esc). You must type t
 ### Basic operations ###
 - **dd** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;will delete current line
 - ***n* dd** &nbsp;&nbsp;will delete ***n*** lines including and below current line
-- **dw** &nbsp;&nbsp;will delete word to the right of the cursor
-- ***n* dw** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;will delete ***n*** word to the right of the cursor
+- **dw** &nbsp;&nbsp;will delete the word to the right of the cursor
+- ***n* dw** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;will delete ***n*** words to the right of the cursor
 - **x** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;will delete letter highlighted by the cursor 
 - **:*n*** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;go to the ***n***th line in the file.
 
