@@ -5,7 +5,7 @@ The purpose of this lab is for you to learn how to use vim as a text editor and 
 
 Before starting the lab, please navigate to [the lecture material](https://docs.google.com/presentation/d/1mm5oDlTgyXVmkHaTHhWeHtDz9cT-MoGLzLolqzNGFEs/edit?usp=sharing) and make sure you have a basic understanding of Vim and regular expression. 
 
-You should also open up the [Vim Cheat-sheet](https://github.com/ClydeByrdIII/cs190lab7/blob/master/cheatsheet.md) we created for quick reference.
+You should also open up the [Vim Cheatsheet](https://github.com/ClydeByrdIII/cs190lab7/blob/master/cheatsheet.md) we created for quick reference.
 
 ## Setup ##
 
@@ -25,7 +25,7 @@ You need to download a sample .vimrc to make using Vim a little easier.
 ```bash
 # NOTE: Don't do this if you already have a .vimrc customized to your liking!!!
 
-wget https://raw.github.com/ClydeByrdIII/cs190lab7/master/vimrc ~/.vimrc
+wget https://raw.github.com/ClydeByrdIII/cs190lab7/master/vimrc -O ~/.vimrc
 ```
 
 ## Clone the CS190lab7 Repo ##
@@ -46,9 +46,9 @@ git clone <github_clone_url>
 
 This file contains duplicate lines, words, and misspellings that need to be fixed. You need to edit this file using Vim and fix the errors. 
 
-You can find the commands and their keyboard shortcut in the Vim Cheat-sheet.
+You can find the commands in the Vim Cheatsheet.
 
-> This is the time you should probably open up the [Vim Cheat-sheet](https://github.com/ClydeByrdIII/cs190lab7/blob/master/cheatsheet.md) mentioned in the beginning of the lab :)
+> This is the time you should probably open up the [Vim Cheatsheet](https://github.com/ClydeByrdIII/cs190lab7/blob/master/cheatsheet.md) mentioned in the beginning of the lab :)
 
 1.  Open `errors.txt` in Vim
     ```bash
@@ -59,6 +59,9 @@ You can find the commands and their keyboard shortcut in the Vim Cheat-sheet.
     The file originally looks like the above text. As you can see there are multiple errors in this text file, such as lines 3-6 being duplicated and lines 8 having a mispelled 'I'.
 
 2.  **Remove duplicate lines**
+
+    > BIG HINT: The commands listed here correspond to commands that can be found in the [Vim Cheatsheet](https://github.com/ClydeByrdIII/cs190lab7/blob/master/cheatsheet.md), most are under the section "Editing Text in Command Mode"
+    
     ```
     GOAL:       Remove duplicated lines appearing on lines 4 and 5. 
     COMMANDS:   delete current line, delete n lines.
@@ -193,7 +196,7 @@ For part two we will add a couple of settings to your .vimrc that maybe useful.
 
 In this section, we are going to work towards validating email addresses using regular expressions. 
 
-> Now would be a good time to bring up the [Regex Cheat-sheet](https://github.com/ClydeByrdIII/cs190lab7/blob/master/cheatsheet.md) (it's the same one, I was lazy).
+> Now would be a good time to bring up the [Regex Cheatsheet](https://github.com/ClydeByrdIII/cs190lab7/blob/master/cheatsheet.md) (it's the same one, I was lazy) (scroll to the bottom of it).
 
 ### Validate Emails? ###
 
