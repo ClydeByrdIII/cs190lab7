@@ -1,7 +1,7 @@
 cs190 Lab 7 - Using Vim and Regular Expressions
 =========
 
-The purpose of this lab is for you to learn how to use vim as a text editor and to familiarize the student
+The purpose of this lab is for you to learn how to use vim as a text editor and to familiarize yourself
 with Regular Expressions.
 
 Before starting the lab, please navigate to [the lecture material](https://docs.google.com/presentation/d/1mm5oDlTgyXVmkHaTHhWeHtDz9cT-MoGLzLolqzNGFEs/edit?usp=sharing) and make sure you have a basic understanding of Vim and regular expression. You can also look at [this website](http://www.fprintf.net/vimCheatSheet.html) because for a detailed cheatsheet for Vim.
