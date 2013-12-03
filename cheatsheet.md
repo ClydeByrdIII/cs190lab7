@@ -34,6 +34,7 @@ To save and exit files, you must be in command mode (click esc). You must type t
 
 - **i** &nbsp;&nbsp;insert mode 
 
+> To exit editing mode, press `ESC` key.
 
 ### Basic operations ###
 - **dd** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;will delete current line
