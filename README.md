@@ -243,7 +243,8 @@ Imagine this. You built a website and have users sign up with their email. You w
     BADemail@.
     no_org@domain.org
     no_numbers@num19.edu
-    ```
+    ???@com.edu
+    I'mcool!@cs.purdue.edu
 
 3. Let's test. In the top box, type `[a-z]`
 
