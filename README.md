@@ -193,6 +193,91 @@ For part two we will add a couple of settings to your .vimrc that maybe useful.
 
 In this section, we are going to work towards validating email addresses using regular expressions. 
 
+> Now would be a good time to bring up the [Regex Cheat-sheet](https://github.com/ClydeByrdIII/cs190lab7/blob/master/cheatsheet.md) (it's the same one, I was lazy).
+
 ### Validate Emails? ###
 
-Imagine this. You built a website and have users sign up with their email. You would like to validate these emails to make sure that no errors occur and that no funny business is going on.
+Imagine this. You built a website and have users sign up with their email. You would like to validate these emails to make sure that no errors occur and that no funny business is going on. When the user inputs his email into the field and clicks 'Submit', there should be code that checks if it is a valid email. 
+
+**Regular Expressions can do this!**
+
+#### Our rules of valid email addresses ####
+
+- Before the '@' symbol, any combination of letters, numbers, +, _, .
+- Must have at least one letter/number before the @ symbol
+- Must contain a '@' symbol
+- After '@', domain is required to be a .com, .edu, or .net.
+
+<br>
+
+1. Go to [http://regexpal.com](http://regexpal.com)
+
+    The top box is reserved for the Regular Expression pattern and the bottom for the test data. If a sequence of characters in the bottom box matches the pattern from the top, then it gets highlighted in blue or yellow (color irrelevant).
+
+2. Paste the text below into the bottom large box on regexpal.
+    ```
+    VALID EMAILS
+
+    username@example.com
+    scott@MyWebsite.net
+    t9@Y.net
+    user.name@example.com
+    tyler.hoffman@Domain.net
+    Tyler+Spam@gmail.com
+    7658675309@ATT.com
+    tyler365@support.edu
+    365Tyler@support.edu
+    under_score@website.com
+
+    INVALID EMAILS
+
+    @FaceBook.com
+    Username@
+    test@yahoo
+    Kirby@.edu
+    tyler@domain72.com
+    scott@72domain.com
+    BADemail@.
+    no_org@domain.org
+    no_numbers@num19.edu
+    ```
+
+3. Let's test. In the top box, type `[a-z]`
+
+    This highlights every letter that is in the range a-z
+
+4. In the top box, type `[a-z]+`
+
+    Every sequence of letters in the range a-z that are next to each other are highlighted.
+
+5. Let's include capital letters. In the top box, type `[A-Za-z]+`
+
+#### OK You get the point ####
+
+Your goal is to get each of the emails under "VALID EMAILS" to be completely highlighted by a single color (shown below)
+
+![Your Goal](http://i.imgur.com/KGrYWpu.png)
+
+If you need help, first look at the Cheat Sheet, then ask your neighbor, then ask the TA.
+
+## Part 4 - Optional (but please...) ##
+
+[Click this link](http://www.purdue.edu/cie/Website%20CoursEval/courseeval/)
+
+Fill out the CS190 survey, either now or later.
+
+
+## Grading ##
+
+1. Open up `errors.txt` in Vim and show us you have fixed the errors
+2. Open up `annoying.txt` in Vim and show us you have removed the correct lines
+3. Show us your regexpal screen (should look like the picture above!)
+
+
+## End of class procedures ##
+
+You can, and you should, either move all of your CS190 files to a separate folder or delete them. We littered your home drive (I'm sorry!), so you should clean it up. Deleting the folders relating to CS190 will not mess up any of your configuration. 
+
+We will have the lessons on the Internet so you can reference them in the future. 
+
+Please fill out the surveys. 
