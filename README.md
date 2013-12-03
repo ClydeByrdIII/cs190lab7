@@ -99,3 +99,4 @@ Here are some useful commands for this lab
    ![The file should now look like:](http://i.imgur.com/Hhb4lw0.png)
 
 ## Part Two - Editing the .vimrc ##
+
