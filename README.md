@@ -104,13 +104,13 @@ This file contains more than 1000 lines and sometimes more than 1000 words on a 
 
 3.  **Remove 20 lines**
     ```
-    GOAL:       Delete lines 14-33 (20 lines)
+    GOAL:       Delete lines 11-30 (20 lines)
     COMMANDS:   delete n lines
     ```
 
 4.  **Remove 1000 lines**
     ```
-    GOAL:       Delete lines 39-1038 (1000 lines)
+    GOAL:       Delete lines 16-1015 (1000 lines)
     COMMANDS:   delete n lines
     ```
 
