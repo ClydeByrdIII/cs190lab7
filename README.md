@@ -28,23 +28,17 @@ You need to download a sample .vimrc to make using Vim a little easier.
 wget https://raw.github.com/ClydeByrdIII/cs190lab7/master/vimrc ~/.vimrc
 ```
 
-----
+## Clone the CS190lab7 Repo ##
 
-## Downloading and Opening the cs190lab7 Directory ##
+You can find the GitHub clone URL on right side of page towards the top.
 
-1. Copy the Clone URL under the `HTTPS clone URL` label (right side of page).
-2. In your home directory, type the terminal command
-
-    ```bash
-    git clone https://github.com/ClydeByrdIII/cs190lab7.git ~/cs190lab7
-    ```
-
-3. A directory named `cs190lab7` appeared in your home directory.
-    
+```bash
+git clone <github_clone_url>
+```
 
 ## Part 1 - Editing example files with vim ##
 
-**NOTE: IN ALL OF PART 1, DO NOT USE INSERT MODE. USE THE COMMANDS LISTED TO FIX THE ERRORS.** 
+**NOTE: DO NOT USE INSERT MODE UNLESS TOLD TO DO SO. USE THE COMMANDS DESCRIBED TO FIX THE ERRORS.** 
 
 ----
 
@@ -194,6 +188,11 @@ For part two we will add a couple of settings to your .vimrc that maybe useful.
 
 ![It should look similar to this](http://i.imgur.com/ENnvQXA.png)
 
-    
+   
+## Part Three - Regular Expressions ##
 
+In this section, we are going to work towards validating email addresses using regular expressions. 
 
+### Validate Emails? ###
+
+Imagine this. You built a website and have users sign up with their email. You would like to validate these emails to make sure that no errors occur and that no funny business is going on.

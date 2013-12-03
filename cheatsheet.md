@@ -1,5 +1,8 @@
-# Vim Cheatsheet #
+# Vim and Regular Expression Cheatsheet #
 
+----
+
+## Vim
 
 ### Opening and closing files ###
 
@@ -43,3 +46,38 @@ To save and exit files, you must be in command mode (click esc). You must type t
 - ***n* dw** &nbsp;&nbsp;will delete word to the right of the cursor
 - **x** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;will delete letter highlighted by the cursor 
 - **:*n*** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;go to the ***n***th line in the file.
+
+----
+
+## Regular Expressions
+
+`[abc]` - matches the single characters a,b,c
+`[a-z]` - matches the letters in range a-z
+`[A-Za-z]` - matches the letters in range a-z or A-Z
+`[A-Za-z0-9]` - matches any letter or number
+
+`.` - any single character
+
+`[abc]*` - zero or more of a,b,c (any combination)
+`[abc]+` - one or more of a,b,c (any combination)
+`(a|b|c)` - a, b, or c
+
+### Examples ###
+
+Ensure a domain ends with .com or .org
+```perl
+[A-Za-z0-9]+\.(com|org)
+
+[A-Za-z0-9]+ - one or more letters or numbers
+\. - the symbol '.'. Must escape it since in regex it has an alternative meaning
+(com|org) - domain must end in com or org
+```
+
+
+Validate Java Function Name
+```perl
+Regex:  [A-Za-z][A-Za-z0-9_]*
+
+[A-Za-z] - first character of function MUST be a letter
+[A-Za-z0-9_]* - the characters after the first (if they exist) can be a letter, number, or underscore.
+```
