@@ -68,6 +68,7 @@ Here are some useful commands for this lab
 ![navigation in vim](http://i.imgur.com/oZTcHDE.png)
 
 ![editing in vim](http://i.imgur.com/noTuncZ.png)
+![saving and closing](http://i.imgur.com/gvfVfEl.png)
 
 *You can do a command multiple times by inserting the number of times you want to execute it followed by the command.*
 `Ex: to delete 10 words, you would use 10dw`
