@@ -59,8 +59,11 @@ cd ~/cs190lab7
 
 Inside ~/cs190lab7 there should be three files a README.md, toEdit.txt, and a .vimrc.
 
-For part one we will edit toEdit.txt with Vim in order to familiarize ourself with the editor.
+For part one we will be to edit `toEdit.txt` with Vim in order to familiarize ourself with the editor.
 
+Remeber to press 'i' without quotes to enter Insert mode in vim and press Esc to leave Insert Mode.
+<br />Review the slides for more details on these modes.
+<br />
 Here are some useful commands for this lab
 ![navigation in vim](http://i.imgur.com/oZTcHDE.png)
 
@@ -100,3 +103,32 @@ Here are some useful commands for this lab
 
 ## Part Two - Editing the .vimrc ##
 
+### What is the .vimrc? ###
+`The vimrc file contains optional runtime configuration settings to initialize Vim when it starts.` 
+
+This means that what ever settings you have in this file, they will be executed when vim is started.
+
+For part two we will add a couple of settings to your .vimrc that maybe useful.
+
+1. Open ~/.vimrc with Vim
+    ```bash
+    vim .vimrc
+    ```
+![If you downloaded the .vimrc during setup it should look like this:](http://i.imgur.com/0O6bRKg.png)
+
+2. Create a new line at the end of the file and input the following on that line (remember to press i for insert mode):
+    ```
+    " Always display the current cursor position in the lower right corner of the Vim window.
+    set ruler
+    " Press space to clear search highlighting and any message already displayed.
+    nnoremap <silent> <Space> :silent noh<Bar>echo<CR>
+    ```
+3. Now save the file and quit
+    ```
+    :wq!
+    ```
+4. Now open the file again in vim and you should see the current cursor position in the lower right of the window.
+
+![It should look similiar to this](http://i.imgur.com/ENnvQXA.png)
+
+    
