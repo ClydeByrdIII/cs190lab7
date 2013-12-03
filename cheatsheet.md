@@ -33,13 +33,15 @@ To save and exit files, you must be in command mode (click esc). You must type t
 - **gg** &nbsp;move the cursor to the beginning of file
 - **G** &nbsp;&nbsp;&nbsp;move the cursor to the end of the file
 
-### Editing text ###
+### Get into Insert Mode ###
 
+- This will allow you to type and make changes just like you would in gedit or similar
 - **i** &nbsp;&nbsp;insert mode 
 
 > To exit editing mode, press `ESC` key.
 
-### Basic operations ###
+### Editing Text in Command Mode (The Basics) ###
+
 - **dd** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;will delete current line
 - ***n* dd** &nbsp;&nbsp;will delete ***n*** lines including and below current line
 - **dw** &nbsp;&nbsp;will delete the word to the right of the cursor
