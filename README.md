@@ -250,6 +250,10 @@ So when we're done, our regex should be something like this.
     ???@com.edu
     I'mcool!@cs.purdue.edu
     user@web?com
+    username@@example.com
+    username@example..com
+    username@..com
+    
 
 3. Let's test. In the top box, type `[a-z]`
 
