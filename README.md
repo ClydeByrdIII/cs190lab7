@@ -206,10 +206,14 @@ Imagine this. You built a website and have users sign up with their email. You w
 
 #### Our rules of valid email addresses ####
 
-- Before the '@' symbol, any combination of letters, numbers, +, _, .
-- Must have at least one letter/number before the @ symbol
-- Must contain a '@' symbol
-- After '@', domain is required to be a .com, .edu, or .net.
+- Before the `@` symbol, any combination of letters, numbers, `+`, `_`, `.`
+- Must have at least one letter/number before the `@` symbol
+- Must contain a `@` symbol
+- After `@`, domain is required to be a .com, .edu, or .net.
+
+So when we're done, our regex should be something like this.
+> This is pseudocode, its just to give you a general idea of the layout of the regex
+`letters numbers + _ .`@`letters`.`com net edu`
 
 <br>
 
