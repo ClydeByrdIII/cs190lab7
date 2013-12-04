@@ -54,19 +54,25 @@ To save and exit files, you must be in command mode (click esc). You must type t
 ## Regular Expressions
 
 `[abc]` - matches the single characters a,b,c
+
 `[a-z]` - matches the letters in range a-z
+
 `[A-Za-z]` - matches the letters in range a-z or A-Z
+
 `[A-Za-z0-9]` - matches any letter or number
 
 `.` - any single character
 
 `[abc]*` - zero or more of a,b,c (any combination)
+
 `[abc]+` - one or more of a,b,c (any combination)
+
 `(a|b|c)` - a, b, or c
 
 ### Examples ###
 
 Ensure a domain ends with .com or .org
+
 ```perl
 [A-Za-z0-9]+\.(com|org)
 
